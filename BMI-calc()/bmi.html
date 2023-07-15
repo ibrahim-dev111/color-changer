@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI calculator</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+           
+            background-color: grey;
+            height: 100vh;
+            width: 100%;
+            margin: auto;
+        }
+
+        .form-container {
+            padding: 50px 20px;
+
+            background-color:rgba(255, 255, 255, 0.152);
+            border-radius: 10px;
+            width: 450px;
+            height: 70%;
+           
+        }
+
+        input {
+            padding: 8px 9px;
+            border: 2px solid black;
+        }
+
+        .section {
+            margin-top: 90px;
+        }
+
+        h1 {
+            /* display: inline; */
+            color: black;
+            text-shadow: 4px 5px 4px gray;
+            font-size: 3rem;
+            text-align: center;
+        }
+
+        .height {
+            font-size: 2rem;
+            padding: 10px;
+        }
+
+        .weight {
+            font-size: 2rem;
+        }
+        input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+    </style>
+</head>
+
+<body>
+
+
+
+
+
+
+    <form action="BMI">
+        <div class="container">
+            <div class="form-container">
+                <h1>Welcome To Bmi Calculator</h1>
+                <div class="section">
+                    <div class="height">
+                        <label for="height">Height in Cm:</label>
+                        <input id="height" type="number">
+                    </div>
+                    <div class="weight">
+                        <label  for="weight">weight in Kg:</label>
+                        <input id="weight" type="number">
+                          <p style="margin-top: 6px; font-size: 1.3rem;text-align: center;background-color: RED;" id="p"></p>
+                          <p  style="margin-top: 6px; font-size: 1.3rem;text-align: center;"id="info"></p>
+                        <button style="display: block;margin-top: 60px;margin-left: 180px;padding: 10px 20px;" >Calculate</button>
+                        <input id="form" style="display: block;margin-top:5px;margin-left: 180px;padding: 10px 15px;border: none;" type="button" onclick="myFunction()" value="Reset form">
+                    </div>
+
+                </div>
+
+    </form>
+    </div>
+    </div>
+
+    <script src="bmi.js"></script>
+
+</body>
+
+</html>
